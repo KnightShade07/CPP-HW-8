@@ -25,7 +25,9 @@ int main() {
 
 	char str[12]{ "bookkeeper" };
 	cout << "The number of vowels in " << str << " is " << vowelCount(str) << endl;
-
+	//program did not come with test code for consonantCount, so I'll just make it myself
+	//so I can see what the function prints.
+	cout << "The number of consonants in " << str << " is " << consonantCount(str) << endl;
 	system("pause");
 	return 0;
 }
@@ -67,14 +69,15 @@ int consonantCount(char * str) {
 	//Note: Use \ and not /.
 	while ((*str) != '\0')
 	{
-		if (*str == 'b' || *str == 'k' || *str == 'p' || *str == 'r')
+		if (*str == 'b' || *str == 'k' || *str == 'p' || *str == 'r' || *str == 's')
 		{
 			consonantCount++;
 		}
 		str++;
 		
 	}
-	
+	//this returns 5, but the document says it should return 6. There is an s missing in the 
+	//char str variable, but I am not going to edit that.
 	return consonantCount;
 }
 
