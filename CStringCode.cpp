@@ -32,7 +32,17 @@ int main() {
 
 int vowelCount(char * str) {
 	int vowelCount = 0;
-	// your code here
+	while ((*str) != '\0')
+	{
+		if (*str == 'a' || *str == 'e' || *str == 'i'
+			|| *str == 'o' || *str == 'u')
+		{
+			vowelCount++;
+		}
+		str++;
+	}
+	
+	//This returns 5, you are good to go!
 	return vowelCount;
 }
 
