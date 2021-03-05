@@ -14,6 +14,7 @@ bool verifyPassword(char * str);
 //Programming Assignment 8: C-Style Strings with Pointers
 //Ethen Oliva
 //Instructor: Ken Meerdink
+//GitHub Repository:https://github.com/KnightShade07/CPP-HW-8
 /*
 	Instructions: Follow the PDF and fill in the functions to produce the correct results using pointers.
 */
