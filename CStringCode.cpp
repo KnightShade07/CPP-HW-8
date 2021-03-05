@@ -42,8 +42,6 @@ consonants (any letter except a, e, i, o, and u) that occur in the string.
 For example, if we had char word[12]{"bookkeepers"}, then
 consonantCount(word) would return 6."
 
-Note: Did not notice that I had to use char arrays with the pointers, refactor tomorrow and
-take the 90/100. Coding while angry and frustrated does nothing good.
 */
 
 int main() {
