@@ -29,6 +29,7 @@ int main() {
 	//program did not come with test code for consonantCount, so I'll just make it myself
 	//so I can see what the function prints.
 	cout << "The number of consonants in " << str << " is " << consonantCount(str) << endl;
+	cout << verifyPassword(str) << endl;
 	system("pause");
 	return 0;
 }
