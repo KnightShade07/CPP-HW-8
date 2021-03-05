@@ -63,8 +63,19 @@ bool isLetter(char ch) {
 }
 
 int consonantCount(char * str) {
-	// your code here
-	return 0;
+	int consonantCount = 0;
+	//Note: Use \ and not /.
+	while ((*str) != '\0')
+	{
+		if (*str == 'b' || *str == 'k' || *str == 'p' || *str == 'r')
+		{
+			consonantCount++;
+		}
+		str++;
+		
+	}
+	
+	return consonantCount;
 }
 
 bool verifyPassword(char * str) {
