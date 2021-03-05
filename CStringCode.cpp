@@ -82,6 +82,19 @@ int consonantCount(char * str) {
 }
 
 bool verifyPassword(char * str) {
-	// your code here
+	int verifyCount = 0;
+	int length = 0;
+	while ((*str) != '\0')
+	{
+		length++;
+		str++;
+		if (length >= 6)
+		{
+			verifyCount++;
+		}
+			
+	}
+	
+	
 	return false;
 }
