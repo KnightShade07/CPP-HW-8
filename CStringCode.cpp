@@ -10,7 +10,7 @@ bool isVowel(char ch);
 bool isConsonant(char ch);
 bool isLetter(char ch);
 bool verifyPassword(char * str);
-
+//CPW 218 - C++ Course
 //Programming Assignment 8: C-Style Strings with Pointers
 //Ethen Oliva
 //Instructor: Ken Meerdink
