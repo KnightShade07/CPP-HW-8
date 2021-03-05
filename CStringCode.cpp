@@ -124,17 +124,29 @@ bool verifyPassword(char * str) {
 				verifyCount++;
 			}	
 		}
-		if (isupper(*str) && islower(*str))
+
+
+		// I checked, isupper and is lower are actually character/string handling functions, so they are not allowed for this assignment.
+		//old implementation:
+		/*if (isupper(*str) && islower(*str))
+		{
+			verifyCount++;
+		} */
+
+		//new implementation without using isupper and islower functions:
+		if (*str >= 'A' && *str <= 'Z' && *str >= 'a' && *str <= 'z')
 		{
 			verifyCount++;
 		}
+		
+
 		if (verifyCount == 3)
 		{
 			//returns a one (true) on test, you're good!
 			return true;
 		}
 					
-	}
+	} 
 	
 	return false;
 }
