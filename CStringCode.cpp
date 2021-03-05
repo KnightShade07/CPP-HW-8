@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <cctype>
 
 using namespace std;
 
@@ -84,6 +85,7 @@ int consonantCount(char * str) {
 bool verifyPassword(char * str) {
 	int verifyCount = 0;
 	int length = 0;
+	int numCount = 0;
 	while ((*str) != '\0')
 	{
 		length++;
@@ -92,9 +94,26 @@ bool verifyPassword(char * str) {
 		{
 			verifyCount++;
 		}
-			
+		if (*str == '1' || *str == '2' || *str == '3' || *str == '4' || *str == '5' ||
+			*str == '6' || *str == '7' || *str == '8' || *str == '9' || *str == '0')
+		{
+			numCount++;
+			if (numCount >= 1)
+			{
+				verifyCount++;
+			}	
+		}
+		if (isupper(*str) && islower(*str))
+		{
+			verifyCount++;
+		}
+		if (verifyCount == 3)
+		{
+			//returns a one on test, you're good!
+			return true;
+		}
+					
 	}
-	
 	
 	return false;
 }
