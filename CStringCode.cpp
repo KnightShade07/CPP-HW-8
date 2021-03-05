@@ -13,7 +13,7 @@ bool verifyPassword(char * str);
 //Note:
 /*
  Functions 1, 2 and 3 in the requirements document are already done for you. Do 4, 5, and 6.
- Make Seperate issues for each function on GitHub, and then at the end, add your header, and any other
+ Make seperate issues for each function on GitHub, and then at the end, add your header, and any other
  neccessary documentation comments.
 
  DO NOT TOUCH Functions 4 5 and 6, as they are already done for you.
@@ -32,7 +32,17 @@ int main() {
 
 int vowelCount(char * str) {
 	int vowelCount = 0;
-	// your code here
+	while ((*str) != '\0')
+	{
+		if (*str == 'a' || *str == 'e' || *str == 'i'
+			|| *str == 'o' || *str == 'u')
+		{
+			vowelCount++;
+		}
+		str++;
+	}
+	
+	//This returns 5, you are good to go!
 	return vowelCount;
 }
 
